@@ -42,7 +42,7 @@ client.on('message', message => {
     if(!role_test) {
       //add them to the role
       message.member.addRole(house_roles[request_house.toLowerCase().capitalize()]);
-      message.reply("And so it shall be! You are now a $request_house!");
+      message.reply("And so it shall be! You are now a " + request_house + "!");
     } else {
       if(role_test !== true) {
         message.reply("I'm sorry but you're already in house " + role_test + ", if you need to change your house you will need to contact a headmaster.");
